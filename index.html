@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>facebook Clone</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-left">
+            <img src="assets/images/logo.png"
+            alt="Logo" class="logo">
+            <i class="fas fa-bars" id="menuToggle" style="font-size: 20px; cursor: pointer;"></i>
+            <input type="text" placeholder="Search Facebook">
+        </div>
+        <div class="navbar-center">
+            <a href="#"><i class="fa-solid fa-house"></i></a>
+            <a href="#"><i class="fa-solid fa-user-group"></i></a>
+            <a href="#"><i class="fa-solid fa-video"></i></a>
+            <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+        </div>
+        <div class="navbar-right">
+            <img src="assets/images/profile.jpg" alt="Profile"
+            class="profile-pic"> 
+            <button id="darkModeToggle"><i class="fa-solid fa-moon"></i></button>
+       </div>
+    </nav>
+
+    <div class="container">
+        <div class="left-sidebar">
+            <ul>
+                <li><i class="fa-solid fa-user"></i>Mahbubur Rahman</li>
+                <li><i class="fa-solid fa-user-group"></i>Friends</li>
+                 <li><i class="fa-solid fa-file"></i>Pages</li>
+                <li><i class="fa-solid fa-video"></i>Videos</li>
+                <li><i class="fa-solid fa-cart-shopping"></i>Marketplace</li>
+                <li><i class="fa-solid fa-calendar"></i>Events</li>
+            </ul>
+        </div>
+
+            <div class="main-content">
+            <div class="search-bar">
+              <input type="text" id="searchInput" placeholder="Search posts...">
+            </div>
+            <div class="post-box">
+                <input type="text" id="postInput" placeholder="What's on your mind,Mahbubur?">
+                <input type="file" id="imageInput" accept="image/*">
+                <button id="postBtn">Post</button>
+            </div>
+             
+          <div id="postContainer">
+            <div class="post">
+                <h4>Mahbubur Rahman</h4>
+                <p>This is my frist post on Facebook Clone!</p>
+
+                <div class="post-actions">
+                    <button class="like-btn"><i class="fas fa-thums-up"></i>Like</button>
+                    <button class="comment-btn"><i class="fas fa-comment"></i>Comment</button>
+                </div>
+
+                <div class="comment-box" style="display: none;">
+                    <input type="text" placeholder="Write a comment..."
+                    class="comment-input">
+                </div>
+            </div>
+          </div>
+
+            <div class="post">
+                <h4>Another User</h4>
+                <p>Welcome to our clone nerwork.<i class="fa-solid fa-heart" style="color: red;"></i></p>
+            </div>
+        </div>
+
+        <div class="right-sidebar">
+            <div class="sponsored">
+                <h4>Sponsored</h4>
+                <img src="assets/images/ad.jpg" alt="Ad">
+                <p>Build your audience with Facebook Ads.</p>
+            </div>
+
+            <div class="birthdays">
+                <h4><i class="fa-solid fa-cake-candles"></i>Birthdays</h4>
+                <p>Today is Nayeem's birthday!</p>
+            </div>
+
+            <div class="contacts">
+                <h4>Contacts</h4>
+                <ul>
+                    <li><i class="fas fa-circle" style="color: green; font-size: 10px;"></i>Jisan</li>
+                    <li><i class="fas fa-circle" style="color: green; font-size: 10px;"></i>Sathi</li>
+                    <li><i class="fas fa-circle" style="color: green; font-size: 10px;"></i>Mehedi</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

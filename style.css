@@ -1,0 +1,272 @@
+/* style.css */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f0f2f5;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1877f2;
+  padding: 10px 20px;
+  color: white;
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 40px;
+  width: 40px;
+  margin-right: 10px;
+}
+
+.navbar-left input {
+  padding: 7px 15px;
+  border: none;
+  border-radius: 20px;
+  outline: none;
+}
+
+.navbar-center a {
+  margin: 0 10px;
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+}
+
+.navbar-center a:hover {
+  color: #ddd;
+}
+
+.profile-pic {
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.container {
+  display: flex;
+  padding: 20px;
+}
+
+.left-sidebar {
+  width: 25%;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.left-sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.left-sidebar li {
+  margin: 15px 0;
+  font-size: 16px;
+  color: #333;
+}
+
+.left-sidebar i {
+  margin-right: 10px;
+  color: #1877f2;
+}
+
+.main-content {
+  width: 75%;
+  margin-left: 20px;
+}
+
+.post-box {
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.post-box input {
+  width: 80%;
+  padding: 10px;
+  margin-right: 10px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+}
+
+.post-box button {
+  padding: 10px 15px;
+  background-color: #1877f2;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.post {
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.right-sidebar {
+  width: 25%;
+  margin-left: 20px;
+}
+
+.right-sidebar .sponsored,
+.right-sidebar .birthdays,
+.right-sidebar .contacts {
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.right-sidebar h4 {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.right-sidebar img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.right-sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.right-sidebar li {
+  margin: 8px 0;
+  font-size: 14px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .left-sidebar,
+  .right-sidebar,
+  .main-content {
+    width: 100%;
+    margin: 0 0 20px 0;
+  }
+
+  .navbar-left input {
+    width: 100px;
+  }
+
+  .navbar-center {
+    display: none;
+  }
+
+  .navbar {
+    flex-wrap: wrap;
+  }
+
+  .profile-pic {
+    height: 30px;
+    width: 30px;
+  }
+}
+
+.post-actions {
+  margin-top: 10px;
+}
+
+.post-actions button {
+  background: none;
+  border: none;
+  color: #1877f2;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.comment-box {
+  margin-top: 10px;
+}
+
+.comment-input {
+  width: 100%;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+body.dark-mode {
+  background-color: #18191a;
+  color: #e4e6eb;
+}
+
+body.dark-mode .navbar {
+  background-color: #242526;
+}
+
+body.dark-mode .left-sidebar,
+body.dark-mode .right-sidebar,
+body.dark-mode .main-content .post-box,
+body.dark-mode .post,
+body.dark-mode .comment-box {
+  background-color: #242526;
+  color: #e4e6eb;
+}
+
+#darkModeToggle {
+  margin-left: 10px;
+  padding: 5px 10px;
+  border: none;
+  background: #eee;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+#imageInput {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.search-bar {
+  width: 1005;
+  padding: 10px;
+  background-color: #fff;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+#searchInput {
+  width: 80%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+}
+
+@media (max-width: 768px) {
+  .left-sidebar {
+    display: none;
+    position:absolute;
+    top: 60px;
+    left: 0;
+    background-color: #fff;
+    width: 200px;
+    height: 100%;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+  }
+
+  .left-sidebar.active {
+    display: block;
+  }
+}
+
